@@ -11,6 +11,7 @@ public class AddressBook {
     public static void main(String[] args) {
         ContactsManager contactsManager = new ContactsManager();
         contactsManager.add();
+        contactsManager.edit();
 
     }
 }

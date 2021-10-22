@@ -1,7 +1,6 @@
 package com.bridgelabz;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ContactsManager {
@@ -18,5 +17,16 @@ public class ContactsManager {
         Contact contact = new Contact(name,address,city,state,email,phoneNumber,zipCode);
         list.add(contact);
     }
+    public void edit(){
+        Scanner scanner = new Scanner(System.in);
+        String name1 = scanner.next();
+        for (int i=0;i< list.size();i++){
+            if ((list.get(i).name).equals(name1)){
+                list.get(i).phoneNumber = 93758723;
+                list.get(i).address = "agjishg";
+                list.get(i).city = "ahfaj";
+            }
+        }
 
+    }
 }
