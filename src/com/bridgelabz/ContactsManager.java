@@ -40,8 +40,6 @@ public class ContactsManager {
                 list.remove(i);
             }
         }
-        for (Contact i:list) {
-            System.out.println(i.name);
         }
     }
 }
