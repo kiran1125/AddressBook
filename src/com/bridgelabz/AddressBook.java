@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class AddressBook {
 
-    public static void main(String[] args) {
-        ContactsManager contactsManager = new ContactsManager();
+    public static void addressBook() {
+        MultipleAddressBook multipleAddressBook = new MultipleAddressBook();
         System.out.println("Welcome to Address Book");
         System.out.println("\n Choose an option from below");
         int option = -1;
@@ -24,19 +24,18 @@ public class AddressBook {
         option = scanner.nextInt();            //Asking user to select an option and storing it in option
         switch (option){
             case 1: {
-                contactsManager.add();
+                multipleAddressBook.add();
                 break;
             }
             case 2: {
-                contactsManager.edit();
+               multipleAddressBook.edit();
                 break;
             }
             case 3: {
-                contactsManager.delete();
+                multipleAddressBook.delete();
                 break;
             }
             default:{
-                System.out.println("Entered number doesn't have anything");
                 break;
             }
         }
